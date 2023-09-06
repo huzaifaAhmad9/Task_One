@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignupFragment">
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/sign_in"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableEnd="@drawable/baseline_supervised_user_circle_24"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableEnd="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Sign in"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Forgot Password TextView -->
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="115dp"
+        android:paddingVertical="21dp"
+        android:text="Forgot Password?"
+        android:textSize="20sp"
+        android:textColor="#7B1FA2"
+        android:textStyle="bold"/>
+
+    <!-- OR Divider TextView -->
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="300dp"
+        android:paddingVertical="8dp"
+        android:layout_marginLeft="85dp"
+        android:text="------------OR------------"
+        android:textSize="20sp"
+        android:textColor="#7B1FA2"
+        android:textStyle="bold"/>
+
+    <!-- Social Media Icons -->
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="194dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/google" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="63dp"
+        android:src="@drawable/fb"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="104dp"/>
+
+</RelativeLayout>

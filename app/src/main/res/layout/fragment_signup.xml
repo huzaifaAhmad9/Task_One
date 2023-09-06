@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignupFragment">
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/sign_up"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/baseline_supervised_user_circle_24"
+        android:drawablePadding="10dp"/>
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+    <!-- Confirm Password EditText -->
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Confirm Password"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/cpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Sign Up" />
+
+</RelativeLayout>
